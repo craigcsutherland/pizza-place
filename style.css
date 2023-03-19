@@ -1,0 +1,184 @@
+header {
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: #d3d3d3;
+  font-size: 18px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav ul li a:hover {
+  background-color: #f2f2f2;
+}
+#menu {
+  margin: 50px auto;
+  width: 80%;
+}
+
+#menu h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#book-a-table {
+  margin: 50px auto;
+  width: 80%;
+}
+
+#book-a-table h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#book-a-table form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#book-a-table label {
+  display: block;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+#book-a-table input {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #d3d3d3;
+  margin: 0 0 20px 0;
+}
+
+#book-a-table button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #a3322c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#book-a-table button:hover {
+  background-color: #f7655d;
+}
+#about-us {
+  background-color: #ffffff;
+  padding: 50px;
+  text-transform: uppercase;
+}
+
+#about-us p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+  line-height: 1.5;
+  width: 900px;
+  height: 100%; /* Added to ensure the element takes up full height of parent container */
+  margin: 0 auto; /* Added to center the element horizontally */
+}
+
+.slideshow-container {
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+}
+
+.slideshow {
+  display: flex;
+  width: 300%; /* Adjust this value based on the number of images */
+  animation: slide 30s infinite;
+}
+
+.slideshow img {
+  width: 33.33%; /* This should be 100% divided by the number of images */
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(
+      -66.66%
+    ); /* This should be -100% multiplied by (number of images - 1) */
+  }
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact h3,
+.social h3 {
+  margin-bottom: 20px;
+}
+
+.contact p {
+  margin-bottom: 10px;
+}
+
+.social ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.social li {
+  margin-right: 20px;
+}
+
+.social a {
+  color: #fff;
+  font-size: 24px;
+}
+
+.social a:hover {
+  color: red;
+}

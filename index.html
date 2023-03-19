@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pizza Posto</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="pizza-logo.png" alt="Pizza Logo" />
+      </div>
+    </header>
+    <main>
+      <section id="about-us">
+        <p>
+          <strong
+            >At our pizza place, we're passionate about bringing a taste of
+            Italy to your plate. Our
+            <span style="color: #03b703">authentic Italian pizzas</span> are
+            made using traditional methods and only the finest ingredients to
+            create a culinary experience that will transport you straight to
+            <span style="color: #03b703">the streets of Naples</span>.</strong
+          >
+        </p>
+      </section>
+
+      <div class="slideshow-container">
+        <div class="slideshow">
+          <img src="fire.jpg" />
+          <img src="cheese.jpg" />
+          <img src="meat.jpg" />
+          <!-- Add more images as needed -->
+        </div>
+      </div>
+
+      <section id="menu">
+        <h2>Our Menu</h2>
+        <div>
+          <img src="menu.jpg" alt="pizza menu" />
+        </div>
+      </section>
+      <section id="book-a-table">
+        <h2>Book a Table</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required />
+
+          <label for="time">Time:</label>
+          <input type="time" id="time" name="time" required />
+
+          <label for="guests">Number of guests:</label>
+          <input
+            type="number"
+            id="guests"
+            name="guests"
+            min="1"
+            max="10"
+            required
+          />
+
+          <button type="submit">Book a Table</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="contact">
+          <h3>Contact Us</h3>
+          <p>123 Main St</p>
+          <p>Anytown, Scotland</p>
+          <p>Phone: 123-123-1234</p>
+          <p>Email: info@yourpizza.com</p>
+        </div>
+        <div class="social">
+          <h3>Follow Us</h3>
+          <ul>
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i>Facebook</a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
