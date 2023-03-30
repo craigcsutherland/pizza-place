@@ -48,6 +48,11 @@ nav ul li a:hover {
   justify-content: space-around;
 }
 
+#menu img {
+  max-width: 100%;
+  height: auto;
+}
+
 #book-a-table {
   margin: 50px auto;
   width: 80%;
@@ -181,4 +186,86 @@ footer {
 
 .social a:hover {
   color: red;
+}
+
+/* For screens smaller than 768px (tablets) */
+@media only screen and (max-width: 768px) {
+  header {
+    height: 300px;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li a {
+    padding: 5px;
+  }
+
+  #menu h2,
+  #book-a-table h2 {
+    font-size: 24px;
+  }
+
+  #book-a-table input {
+    width: 80%;
+  }
+
+  #about-us p {
+    font-size: 24px;
+    width: 90%;
+  }
+
+  .slideshow img {
+    width: 50%;
+  }
+
+  footer {
+    padding: 30px 0;
+  }
+
+  .social a {
+    font-size: 20px;
+  }
+}
+
+/* For screens smaller than 480px (smartphones) */
+@media only screen and (max-width: 480px) {
+  header {
+    height: 200px;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul li a {
+    padding: 5px 0;
+  }
+
+  #menu h2,
+  #book-a-table h2 {
+    font-size: 20px;
+  }
+
+  #book-a-table input {
+    width: 100%;
+  }
+
+  #about-us p {
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .slideshow img {
+    width: 100%;
+  }
+
+  footer {
+    padding: 20px 0;
+  }
+
+  .social a {
+    font-size: 18px;
+  }
 }
